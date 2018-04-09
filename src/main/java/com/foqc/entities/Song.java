@@ -52,10 +52,10 @@ public class Song {
         return r;
     }
 
-    private int soundPosition(List<String> s, String sound) {
+    private int soundPosition(List<String> song, String sound) {
         int pos = -1, i = 0;
-        while (pos != i && i < s.size()) {
-            if (s.get(i).equals(sound)) {
+        while (pos != i && i < song.size()) {
+            if (song.get(i).equals(sound)) {
                 pos = i;
             }
             i++;
@@ -63,13 +63,13 @@ public class Song {
         return pos;
     }
 
-    private String sing(List<String> s, int start) {
+    private String sing(List<String> song, int start) {
         StringBuilder r = new StringBuilder();
-        for (int i = start; i < s.size(); i++) {
-            if (i != s.size() - 1) {
-                r.append(s.get(i)).append(", ");
+        for (int i = start; i < song.size(); i++) {
+            if (i != song.size() - 1) {
+                r.append(song.get(i)).append(", ");
             } else {
-                r.append(s.get(i));
+                r.append(song.get(i));
             }
         }
         return r.toString();
