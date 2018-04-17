@@ -27,9 +27,3 @@ E.g.:
 
 # This app is made in java
 -  Test suite is in test package
-# Test
-The test was done with Junit 4
-
-![captura1](https://user-images.githubusercontent.com/13221281/38518760-73aad736-3c03-11e8-8eee-0ac4ff38879e.PNG)
-
-Testing with JUnit 4.x
